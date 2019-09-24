@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_padding">16dp</dimen>
+    <dimen name="tv_textSize">20sp</dimen>
+    <dimen name="et_marginTop">6dp</dimen>
+</resources>

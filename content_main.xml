@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/instructions"
+        android:text="@string/tv_instructions"
+        style="@style/tv_instructions_style" />
+
+    <TextView
+        android:id="@+id/tv_current_weight"
+        android:text="@string/tv_current_weight"
+        android:layout_below="@+id/instructions"
+        style="@style/tv_main_style" />
+
+    <EditText
+        android:id="@+id/input_current_weight"
+        style="@style/et_style"
+        android:layout_alignBottom="@+id/tv_current_weight"
+        android:layout_toRightOf="@+id/tv_current_weight"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tv_goal_weight"
+        android:layout_below="@+id/tv_current_weight"
+        style="@style/tv_main_style"
+        android:text="@string/goal_weight" />
+
+    <EditText
+        android:id="@+id/input_goal_weight"
+        style="@style/et_style"
+        android:layout_alignBottom="@+id/tv_goal_weight"
+        android:layout_toRightOf="@+id/tv_goal_weight"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/tv_main_style"
+        android:layout_below="@+id/tv_goal_weight"
+        android:text="@string/tv_time_frame_days"/>
+
+    <EditText
+        android:id="@+id/input_time"
+        style="@style/et_style"
+        android:layout_alignBottom="@+id/tv_time"
+        android:layout_toRightOf="@+id/tv_time"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tv_age"
+        style="@style/tv_main_style"
+        android:layout_below="@+id/tv_time"
+        android:text="@string/tv_age" />
+
+    <EditText
+        android:id="@+id/input_age"
+        style="@style/et_style"
+        android:layout_alignBottom="@+id/tv_age"
+        android:layout_toRightOf="@+id/tv_age"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/tv_height"
+        style="@style/tv_main_style"
+        android:layout_below="@+id/tv_age"
+        android:text="@string/tv_height"
+        />
+
+    <EditText
+        android:id="@+id/input_height"
+        style="@style/et_style"
+        android:layout_alignBottom="@+id/tv_height"
+        android:layout_toRightOf="@+id/tv_height"
+        android:inputType="numberDecimal"/>
+
+
+    <TextView
+        android:id="@+id/tv_gender"
+        style="@style/tv_main_style"
+        android:layout_below="@+id/tv_height"
+        android:text="@string/gender"/>
+
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_marginTop"
+        android:layout_alignBottom="@+id/tv_gender"
+        android:layout_toRightOf="@+id/tv_gender">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/tv_level"
+        style="@style/tv_main_style"
+        android:layout_below="@+id/tv_gender"
+        android:text="@string/tv_activity_level" />
+
+    <Spinner
+        android:id="@+id/level_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignBottom="@+id/tv_level"
+        android:layout_toRightOf="@+id/tv_level"
+        >
+
+
+    </Spinner>
+
+
+</RelativeLayout>
